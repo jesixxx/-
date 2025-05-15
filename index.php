@@ -1,5 +1,5 @@
 <?php
-// Подключение к базе данных
+
 $host = 'localhost';
 $dbname = 'testovoe';
 $username = 'root';
@@ -12,7 +12,7 @@ try {
     die("Ошибка подключения к базе данных: " . $e->getMessage());
 }
 
-// Запрос для получения информации о товарах с наличием
+
 $sql = "
     SELECT 
         p.id,
@@ -38,7 +38,7 @@ try {
     die("Ошибка выполнения запроса: " . $e->getMessage());
 }
 
-// Вывод результатов в виде HTML таблицы
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -46,7 +46,7 @@ try {
     <meta charset="UTF-8">
     <title>Информация о товарах</title>
 <style>
-        /* Подключение книжного шрифта */
+       
         @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
         
         body {
@@ -122,7 +122,7 @@ try {
             font-style: italic;
         }
         
-        /* Декоративные элементы */
+        
         td:first-child {
             border-left: 3px solid #f8c3cd;
         }
@@ -135,7 +135,7 @@ try {
             border-bottom: 2px solid #f8c3cd;
         }
         
-        /* Цена с красивым оформлением */
+       
         td:nth-child(4) {
             font-family: 'PT Serif', serif;
             font-style: italic;
